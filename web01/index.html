@@ -3,53 +3,115 @@
     <head>
         <meta charset="utf=8">
         <title> TITLE </title>
-        <body>
-           <h1> TITLE 1 </h1>
-           <h2> TITLE 2 </h2>
-           <h3> TITLE 3 </h3>
-           <h4> TITLE 4 </h4>
-           <h5> TITLE 5 </h5>
-           <h6> TITLE 6 </h6>
-
-           <!-- HTML 문세에서 일반적인 개행은 적용되지 않는다 이때 <br> 사용 -->
-           줄을 바꿀거에요 <br> 바뀌었나요? <br> 다시한번! 
-           
-           <hr> <!-- 전체를 가로지르는 가로선 Horizon -->
-
-           <h3> MARK </h3><br>
-           <strong> 강조의 의미 (semantic) 부여 : 실제로 강조 의미가 부여된다 </strong><br>
-           <b> 볼드체/굵은글씨 </b><br>
-           <mark> 형광펜 효과 </mark><br>
-           <u> 밑줄 태그 </u><br>
-           <s> 취소선 </s><br>
-           <i> 이탤릭 </i><br>
-           <em> 강조의 의미 semantic을 기울기로 부여 </em>
-
-           <h3> 인용 태그 </h3>
-           <blockquote> 인용글이 있는 경우 사용 </blockquote>
-           <q> 인용글이 있는 경우 사용 </q><br>
-           <!-- inline 태그와 block 태그의 차이점 <br>을 붙여야 하거나 아니거나 -->
-           기준글<sup>위 첨자</sup><br>
-           기준글<sub>아래 첨자</sub><br>
-           <abbr title="내용">약어</abbr>
-           <cite>다른 사이트 참고 내용</cite>
-           <br>
-
-           <pre><code> 
-               소스코드를 HTML 문서에 작성하기 위해 사용 개행 안됨 
-            </code></pre><br>
-           <kbd> 키보드 입력 관련 내용을 작성하기 위해 사용 </kbd><br>
-
-        </body>
     </head>
+    <body>
+        <h1> TITLE 1 </h1>
+        <h2> TITLE 2 </h2>
+        <h3> TITLE 3 </h3>
+        <h4> TITLE 4 </h4>
+        <h5> TITLE 5 </h5>
+        <h6> TITLE 6 </h6>
+
+        <!-- HTML 문세에서 일반적인 개행은 적용되지 않는다 이때 <br> 사용 -->
+        줄을 바꿀거에요 <br> 바뀌었나요? <br> 다시한번! 
+           
+        <hr> <!-- 전체를 가로지르는 가로선 Horizon -->
+
+        <h3> MARK </h3><br>
+        <strong> 강조의 의미 (semantic) 부여 : 실제로 강조 의미가 부여된다 </strong><br>
+        <b> 볼드체/굵은글씨 </b><br>
+        <mark> 형광펜 효과 </mark><br>
+        <u> 밑줄 태그 </u><br>
+        <s> 취소선 </s><br>
+        <i> 이탤릭 </i><br>
+        <em> 강조의 의미 semantic을 기울기로 부여 </em>
+
+        <h3> 인용 태그 </h3>
+        <blockquote> 인용글이 있는 경우 사용 </blockquote>
+        <q> 인용글이 있는 경우 사용 </q><br>
+        <!-- inline 태그와 block 태그의 차이점 <br>을 붙여야 하거나 아니거나 -->
+        기준글<sup>위 첨자</sup><br>
+        기준글<sub>아래 첨자</sub><br>
+        <abbr title="내용">약어</abbr>
+        <cite>다른 사이트 참고 내용</cite>
+        <br>
+
+        <pre><code> 
+            소스코드를 HTML 문서에 작성하기 위해 사용 개행 안됨 
+        </code></pre><br>
+        <kbd> 키보드 입력 관련 내용을 작성하기 위해 사용 </kbd><br>
+           
+        <h1> 제목열이 있는 테이블 </h1>
+        <table border="1">
+            <tr>
+                <th>제목열1</th>
+                <th>제목열2</th>
+                <th>제목열3</th>
+            </tr>
+            <tr>
+                <th>내용 1행1열</th>
+                <th>내용 1행2열</th>
+                <th>내용 1행3열</th>
+            </tr>
+            <tr>
+                <th>내용 2행1열</th>
+                <th>내용 2행2열</th>
+                <th>내용 2행3열</th>
+            </tr>
+        </table>
+
+        <!-- h1+table[border="1"](tr>th+td*2)*3 -->
+        <h1>테이블 제목을 위한 caption</h1>
+        <table border="1">
+            <tr>
+                <td>1행1열</td>
+                <td>1행2열</td>
+            </tr>
+            <tr>
+                <td>2행1열</td>
+                <td>2행2열</td>
+            </tr>
+            <caption> 테이블 제목 </caption>
+        </table>
+        
+
+        <h1>thead, tbody, tfoot을 적용한 테이블</h1>
+        <table border="1">
+            <caption> 테이블 제목 </caption>
+            <colgroup>
+                <col bgcolor="red">
+                <col bgcolor="#9c9c9c">
+            </colgroup>
+            <thead>
+                <tr>
+                    <td>1행1열</td>
+                    <td>1행2열</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2행1열</td>
+                    <td>2행2열</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>3행1열</td>
+                    <td>3행2열</td>
+                </tr>
+            </tfoot>
+        </table>
+
+    </body>
+   
 </html>
 
 <!-- 확장프로그램 Live Server : command + L + O 누르면 로컬로 실행된다 -->
 <!-- vscode에서는 html:5 라고 치면 기본 골격 완성된다 -->
 <!-- command + space 사용가능한 코드목록 제안 -->
-
 <!--
     <meta name="attribute_name" content="attribute_value"> : 임의작성 속성
     <meta http=equiv="attribute_name" content="attribute_value"> : 지정된 속성
         ex) refresh (새로고침)  attribute_value에 5넣으면 5초마다 새로고침
 -->
+
