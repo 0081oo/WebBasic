@@ -1,0 +1,77 @@
+/*
+.font-variant{
+    font-variant: small-caps;
+}
+
+.font-style-italic{
+    font-style: italic;
+}
+
+.font-style-oblique{
+    font-style: oblique;
+}
+
+p{
+    color: #d7d547;
+}
+*/
+
+html {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 { font-size: 5rem; }
+h2 { font-size: 4rem; }
+h3 { font-size: 3rem; }
+h4 { font-size: 2.5rem; }
+h5 { font-size: 2rem; }
+h6 { font-size: 1.5rem; }
+
+.ft-12 { font-size: 12px ;}
+.ft-14 { font-size: 14px ;}
+.ft-16 { font-size: 16px ;}
+
+
+.shadow{
+    text-shadow: 3px 3px 5px gray;
+}
+
+.shadow-center {
+    text-shadow: 8px 8px 5px rgb(92,92,92);
+    text-align: center;
+}
+
+.shadow-right {
+    text-shadow: 8px 8px 5px rgb(92,92,92);
+    text-align: right; 
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+p{
+    color: rgb(92,92,92);
+    /* letter-spacing: 5px; */
+    /* word-spacing: 5px; */
+
+}
+
+a{
+    color: rgb(129, 207, 255);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(44,174,255);
+    font-weight: bolder;
+}
