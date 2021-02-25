@@ -15,7 +15,6 @@ img {
     left: 20px;
 }
 
-/* a태그에 걸리는 모든 속성 없애고 글자색상 변환 */
 a { text-decoration: none; color: white}
 a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
@@ -40,24 +39,53 @@ a:hover, a:active { text-decoration: none; color:rgb(250, 110, 133)}
     font-weight: bold;
 }
 
-.html_window, .css_window {
-    float: left; /* 옆으로 이어서 붙이기 */
+.login_window {
     margin: 10px;
-    line-height: 500px;
-    width: 300px; height: 500px;
+    width: 880px; height: 500px;
     text-align: center;
     background-color: linen;
+    font-weight: bold;
     color: rgb(228, 137, 150);
 }
 
-.adv {
-    float: left; /* 옆으로 이어서 붙이기 */
-    margin: 10px;
-    line-height: 500px;
-    width: 240px; height: 500px;
-    text-align: center;
-    background-color: linen;
-    color: rgb(228, 137, 150);
+h1 {
+    margin: 40px;
+    color: rgb(250, 110, 133);
+}
+
+.div_id, .div_pw {
+    display: inline-block; /* 이렇게하면 div안의 div가 중앙정렬 된다 */
+    width: 50%;
+    border-bottom: 2px solid rgb(250, 110, 133);
+    margin: 20px;
+    padding: 10px 10px;
+}
+
+.id, .pw {
+    width: 100%;
+    border: none;
+    outline: none;
+    color: rgb(250, 110, 133);
+    font-size: 16px;
+    height: 25px;
+    background: none;
+}
+
+.btn {
+    margin-top: 20px;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    background: none;
+    border: 2px solid rgb(250, 110, 133);
+    font-size: 16px;
+    font-weight: bold;
+    color:rgb(250, 110, 133);
+}
+
+.btn:hover {
+    color: white;
+    background-color: rgb(250, 110, 133);
 }
 
 footer {
@@ -70,5 +98,3 @@ footer {
     text-align: center;
     line-height: 50px; /* 글씨의 높이 자체를 footer크기와 같게 해줘서 수직 중앙 정렬 */
 }
-
-

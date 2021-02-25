@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="/MyPage/css/css_pg_login.css" type="text/css">
+</head>
+<body>
+    <div>
+        <header>
+            <div id="logo">
+                <a href="/MyPage/html/main.html"><img src="/frog1.png"></a>
+            </div>
+
+            <nav id="contents">
+                <a href="#">HTML</a> | 
+                <a href="#">CSS</a>
+            </nav>
+
+            <nav id="login">
+                <a href="#" style="color:rgb(250, 110, 133)">LOGIN</a> | 
+                <a href="#">SIGN-UP</a>
+            </nav>
+        </header>
+
+        <div class="login_window">
+            <br><h1> LOGIN </h1> <!-- 여기서 <br><br>제거하면 margin이 이상하게 들어가네? -->
+
+            <div class="div_id">
+                <input type="text" class="id" placeholder="아이디">
+            </div>
+            
+            <div class="div_pw">
+                <input type="password" class="pw" placeholder="비밀번호">
+            </div>
+            <br>
+            <button type="button" class="btn" onclick="button()">
+                LOGIN
+            </button>
+            
+            <div class ="Find_id_pw">
+                <br><br>
+                <a href="#" style="color:rgb(250, 110, 133)">Forgot ID?</a>
+                <a href="#" style="color:rgb(250, 110, 133)">&nbsp&nbsp&nbsp&nbsp Forgot PW?</a>
+            </div>
+
+        </div>
+
+        <footer>
+            Create by Heemin
+        </footer>
+    </div>
+</body>
+</html>

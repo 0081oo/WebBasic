@@ -15,7 +15,6 @@ img {
     left: 20px;
 }
 
-/* a태그에 걸리는 모든 속성 없애고 글자색상 변환 */
 a { text-decoration: none; color: white}
 a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
@@ -40,11 +39,21 @@ a:hover, a:active { text-decoration: none; color:rgb(250, 110, 133)}
     font-weight: bold;
 }
 
-.html_window, .css_window {
+.css_menu {
+    float: left;
+    margin: 10px;
+    width: 100px; height: 500px;
+    text-align: center;
+    background-color: lightpink;
+    font-weight: bold;
+    color: rgb(228, 137, 150);
+}
+
+.css_window {
     float: left; /* 옆으로 이어서 붙이기 */
     margin: 10px;
     line-height: 500px;
-    width: 300px; height: 500px;
+    width: 500px; height: 500px;
     text-align: center;
     background-color: linen;
     color: rgb(228, 137, 150);
