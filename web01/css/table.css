@@ -1,0 +1,30 @@
+* {
+    margin: 0px; padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16pt; 
+    font-family: "맑은 고딕", "Courier New", 'Courier New', Courier, monospace;
+}
+
+table {
+    width: 100%;
+}
+
+table, tr, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+}
+
+table.hover tr:hover{
+    background-color: gray;
+}
+
+table.stripe tr:nth-child(even){
+    background-color: lightgoldenrodyellow;
+}

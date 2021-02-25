@@ -1,0 +1,46 @@
+* {
+    margin: 0px; padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px; 
+    font-family: "맑은 고딕", "Courier New", 'Courier New', Courier, monospace;
+}
+
+.v-menu{
+    width: 350px;
+}
+
+.v-menu .imenu .item-link{
+    display: block;
+    padding: 12px 6px;
+    text-decoration: none;
+    color: black;
+}
+
+/* .v-menu .menu .item-link:hover {
+    background-color: black;
+    color: white
+} */
+
+.h-menu .menu{
+    list-style-type: none;
+    background-color: lightgray;
+}
+
+.h-menu .menu-item{
+    float: left;
+}
+
+.h-menu .imenu .item-link{
+    display: inline-block;
+    padding: 12px 6px;
+    text-decoration: none;
+    color: black;
+}
+
+.item-link:hover {
+    background-color: black;
+    color: white
+}

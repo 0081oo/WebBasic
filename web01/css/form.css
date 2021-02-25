@@ -1,0 +1,26 @@
+* {
+    margin: 0px; padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16pt; 
+    font-family: "맑은 고딕", "Courier New", 'Courier New', Courier, monospace;
+}
+
+input.input-text {
+    display: inline-block;
+    width: 100%; height: 36px;
+    padding: 0px 5px;
+    border-style: solid;
+    border-color: lightgray;
+}
+
+input.input-text:hover{
+    background-color: lightpink;
+}
+
+input.input-text:focus {
+    outline: 3px solid lightblue;
+}
+
