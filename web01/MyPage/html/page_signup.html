@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>SIGN UP</title>
+    <link rel="stylesheet" href="/MyPage/css/css_pg_signup.css" type="text/css">
+</head>
+<body>
+    <div>
+        <header>
+            <div id="logo">
+                <a href="/MyPage/html/main.html"><img src="/frog1.png"></a>
+            </div>
+
+            <nav id="contents">
+                <a href="/MyPage/html/page_html.html">HTML</a> | 
+                <a href="/MyPage/html/page_css.html">CSS</a>
+            </nav>
+
+            <nav id="login">
+                <a href="/MyPage/html/page_login.html">LOGIN</a> | 
+                <a href="/MyPage/html/page_signup.html" style="color:rgb(250, 110, 133)">SIGN-UP</a>
+            </nav>
+        </header>
+
+        <div class="signup_window">
+            <br><h1> SIGN UP </h1><br> <!-- 여기서 <br>제거하면 margin이 이상하게 들어가네? -->
+            
+            <br><br>이름&nbsp&nbsp
+            <div class="div_name">
+                <input type="text" class="name" placeholder="여기 입력하세요"><br>
+            </div>
+
+            <br><br><br>주민등록번호&nbsp&nbsp
+            <div class="div_num">
+                <input type="text" id="n1" class="num" size="10" placeholder="앞자리">
+            </div>
+            &nbsp-
+            <div class="div_num2">
+                <input type="password" id="n2" class="num" size="10" placeholder="뒷자리(*)"><br>
+            </div>
+            
+            <br><br><br>아이디&nbsp&nbsp
+            <div class="div_id">
+                <input type="text" class="id" placeholder="3자이상 입력하세요"><br>
+            </div>
+
+            <br><br><br>비밀번호&nbsp&nbsp
+            <div class="div_pw">
+                <input type="password" class="pw" placeholder="영소문자, 숫자 조합 8자 이상"><br>
+            </div>
+
+            <br><br><br>비밀번호 확인&nbsp&nbsp
+            <div class="div_pw1">
+                <input type="password" class="pw1" placeholder="다시 입력해주세요"><br>
+            </div>
+
+            <br><br><br>
+            <div class="div_birth">
+                <label for="y">생년월일&nbsp</label>
+                <div id="birth_y"> 
+                    <input type="text" id="y" class="birth" size=7 maxlength="4" placeholder="년도">
+                </div>&nbsp-
+
+                <div id="birth_m">
+                    <select id="m" class="birth">
+                        <option>월</option>
+                        <option value="01">1</option> 
+                        <option value="02">2</option>
+                        <option value="03">3</option>
+                        <option value="04">4</option>
+                        <option value="05">5</option>
+                        <option value="06">6</option>
+                        <option value="07">7</option>
+                        <option value="08">8</option>
+                        <option value="09">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>&nbsp-
+
+                <div id="birth_d">
+                    <input type="text" id="d" class="birth" size=4 maxlength="2" placeholder="일">
+                </div>
+            </div>
+
+            <br><br>이메일&nbsp&nbsp
+            <div class="div_mail1">
+                <input type="text" id="m1" class="mail" size="10">
+            </div>
+            @
+            <div class="div_mail2">
+                <select id="mailurl">
+                    <option value="0">직접입력</option>
+                    <option value="naver.com">naver.com</option>
+                    <option value="naver.com">gmail.com</option>
+                    <option value="naver.com">daum.net</option>
+                    <option value="naver.com">hotmail.com</option>
+                    <option value="naver.com">nate.com</option>
+                </select>
+            </div>
+
+            <br><br><br>핸드폰 번호&nbsp&nbsp
+            <div class="div_phone1">
+                <select id="pn1" class="phone">
+                    <option value="0">-</option>
+                    <option value="010">010</option>
+                    <option value="010">011</option>
+                    <option value="010">012</option>
+                    <option value="010">016</option>
+                    <option value="010">019</option>
+                </select>
+            </div>
+            &nbsp-
+            <div class="div_phone2">
+                <input type=text id="pn2" class=phone size="6">
+            </div>
+            &nbsp-
+            <div class="div_phone3">
+                <input type=text id="pn3" class=phone size="6">
+            </div>
+
+            <br><br><br><br>
+            <button type="button" class="btn" onclick="button()">
+                SIGN UP
+            </button>
+
+        </div>
+
+        <footer>
+            Created by Heemin
+        </footer>
+    </div>
+</body>
+</html>

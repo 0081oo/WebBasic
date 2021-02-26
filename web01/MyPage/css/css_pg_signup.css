@@ -1,0 +1,125 @@
+* {margin: 0px; padding: 0px;}
+
+header {
+    width: 900px;
+    height: 100px;
+    background-color:lightpink;
+    position: relative; /* header의 absolute요소들을 header의 최상단 기준으로 하게 하려고 */
+}
+
+img {
+    width: 80px; height:80px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+a { text-decoration: none; color: white}
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; color:rgb(250, 110, 133)}
+
+#contents {
+    position: absolute;
+    top: 35px;
+    left: 150px;
+    color: white;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+#login {
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    color: white;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.signup_window {
+    overflow: auto; /* div태그 내에 스크롤바 auto는 내용 넘치면 스크롤바 보임 */
+    margin: 10px;
+    width: 880px; height: 500px;
+    text-align: center;
+    background-color: linen;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(250, 110, 133);
+}
+
+.signup_window:h1 {
+    margin: 10px;
+    color: rgb(250, 110, 133);
+}
+
+/* div에 밑줄 만들기 : 각자의 크기를 여기서 정해줘야 해서 따로 만들 수 밖에.. */
+
+.div_name, .div_id, .div_pw, .div_pw1 {
+    display: inline-block;
+    width: 20%;
+    border-bottom: 2px solid rgb(250, 110, 133);
+}
+
+.div_num, .div_num2 {
+    display: inline-block;
+    width: 10%;
+    border-bottom: 2px solid rgb(250, 110, 133);
+}
+
+#birth_y, #birth_m, #birth_d {
+    display: inline-block;
+    width: 6%;
+    border-bottom: 2px solid rgb(250, 110, 133);
+}
+
+.div_mail1, .div_mail2 {
+    display: inline-block;
+    width: 10%;
+    border-bottom: 2px solid rgb(250, 110, 133);
+}
+
+.div_phone1, .div_phone2, .div_phone3 {
+    display: inline-block;
+    width: 7%;
+    border-bottom: 2px solid rgb(250, 110, 133);
+}
+
+/* (모든 text 속성의 공통작업) 텍스트 상자 패딩주고, div에 꽉차고, 투명하게 만들기 */
+.name, .num, .id, .pw, .pw1, #y, #d, #m, #m1, #mailurl, #pn1, #pn2, #pn3 {
+    padding: 5px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.btn {
+    margin-top: 5px;
+    margin-bottom: 50px;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background: none;
+    border: 2px solid rgb(250, 110, 133);
+    font-size: 16px;
+    font-weight: bold;
+    color:rgb(250, 110, 133);
+}
+
+.btn:hover {
+    color: white;
+    background-color: rgb(250, 110, 133);
+}
+
+footer {
+    background-color: lightpink;
+    width: 900px;
+    height: 50px;
+    clear: left;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px; /* 글씨의 높이 자체를 footer크기와 같게 해줘서 수직 중앙 정렬 */
+}

@@ -9,37 +9,40 @@
     <div>
         <header>
             <div id="logo">
-                <a href="/MyPage/html/main.html"><img src="/frog1.png"></a>
+                <a href="/MyPage/html/main.html"><img id="frog" src="/frog1.png"></a>
             </div>
 
             <nav id="contents">
-                <a href="#">HTML</a> | 
-                <a href="#" style="color:rgb(250, 110, 133)">CSS</a>
+                <a href="/MyPage/html/page_html.html">HTML</a> | 
+                <a href="/MyPage/html/page_css.html" style="color:rgb(250, 110, 133)">CSS</a>
             </nav>
 
             <nav id="login">
-                <a href="#">LOGIN</a> | 
-                <a href="#">SIGN-UP</a>
+                <a href="/MyPage/html/page_login.html">LOGIN</a> | 
+                <a href="/MyPage/html/page_signup.html">SIGN-UP</a>
             </nav>
         </header>
 
         <nav class="css_menu">
-            <ul>
+            <ul> 
                 <!-- 수직 중앙 정렬 다른 방법 : 고정높이와 top/bottom 여백을 auto로 줘서?! -->
                 <br><br><br><br><br><br><br>
-                <li><a href="#">BASIC 01</a></li><br><br>
-                <li><a href="#">FORM</a></li><br><br>
-                <li><a href="#">MENU</a></li><br><br>
-                <li><a href="#">TABLE</a></li><br>
+                <li><a href="#" onClick="cssFrame.location.href='/css/basic01.css'">BASIC 01</a></li><br><br>
+                <li><a href="#" onClick="cssFrame.location.href='/css/form.css'">FORM</a></li><br><br>
+                <li><a href="#" onClick="cssFrame.location.href='/css/menu.css'">MENU</a></li><br><br>
+                <li><a href="#" onClick="cssFrame.location.href='/css/table.css'">TABLE</a></li><br>
             </ul>
         </nav>
 
         <div class="css_window">
-            css
+            <h2>CSS</h2>
+            <iframe name="cssFrame" width="450px" height="430px"></iframe>
         </div>
 
         <aside class="adv">
-            adv
+            <h3>오늘의 광고!</h3><br>
+            <a href="https://www.netflix.com/browse"><img src="/netf.png" width=200px></a>
+            <h5><br>위의 로고 클릭시<br>넷플릭스 홈페이지로<br>이동합니다!</h5>
         </aside>
 
         <footer>

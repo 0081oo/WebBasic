@@ -8,7 +8,7 @@ header {
     position: relative; /* header의 absolute요소들을 header의 최상단 기준으로 하게 하려고 */
 }
 
-img {
+#frog {
     width: 80px; height:80px;
     position: absolute;
     top: 10px;
@@ -52,8 +52,8 @@ a:hover, a:active { text-decoration: none; color:rgb(250, 110, 133)}
 .html_window {
     float: left; /* 옆으로 이어서 붙이기 */
     margin: 10px;
-    line-height: 500px;
-    width: 500px; height: 500px;
+    padding: 10px;
+    width: 480px; height: 480px;
     text-align: center;
     background-color: linen;
     color: rgb(228, 137, 150);
@@ -62,8 +62,9 @@ a:hover, a:active { text-decoration: none; color:rgb(250, 110, 133)}
 .adv {
     float: left; /* 옆으로 이어서 붙이기 */
     margin: 10px;
-    line-height: 500px;
-    width: 240px; height: 500px;
+    padding: 10px;
+    /*line-height: 500px;*/
+    width: 220px; height: 480px;
     text-align: center;
     background-color: linen;
     color: rgb(228, 137, 150);
