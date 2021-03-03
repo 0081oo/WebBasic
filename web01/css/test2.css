@@ -1,0 +1,28 @@
+table {
+    text-align: center;
+}
+
+caption {
+    color: blue;
+    font-size: 16pt;
+    font-weight: bold;
+}
+
+thead {
+    background-color: red;
+    color: white;
+}
+
+tbody {
+    background-color: yellow;
+}
+
+button {
+    background-color: green;
+    color: white;
+}
+
+tfoot {
+    background-color: orangered;
+    color: green;
+}
