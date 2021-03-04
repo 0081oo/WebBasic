@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Prompt로 입력 받아 출력하기</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>이름 : </th>
+            <td id="name"></td>
+        </tr>
+        <tr>
+            <th>나이 : </th>
+            <td id="age"></td>
+        </tr>
+        <tr>
+            <th>성별 : </th>
+            <td id="gender"></td>
+        </tr>
+    </table>
+</body>
+<script type="text/javascript">
+    // document.getElementById('name').innerHTML=prompt('이름을 입력하세요');
+    // document.getElementById('age').innerHTML=prompt('나이를 입력하세요');
+    // document.getElementById('gender').innerHTML=prompt('성별을 입력하세요');
+   
+    // var name = prompt('이름을 입력하세요');
+    // var age = prompt('나이를 입력하세요');
+    // var gender = prompt('성별을 입력하세요');
+    
+    // document.getElementById("name").innerHTML=name;
+    // document.getElementById("age").innerHTML=age;
+    // document.getElementById("gender").innerHTML=gender;
+
+    var user_input = prompt("이름, 나이, 성별을 입력하세요").split(" ");
+    var name = user_input[0];
+    var age = user_input[1];
+    var gender = user_input[2];
+
+    document.getElementById("name").innerHTML=name;
+    document.getElementById("age").innerHTML=age;
+    document.getElementById("gender").innerHTML=gender;
+    
+</script>
+</html>
