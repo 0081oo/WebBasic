@@ -1,7 +1,7 @@
 * {margin: 0px; padding: 0px;}
 
 header {
-    width: 900px;
+    width: 100%;
     height: 100px;
     background-color:lightpink;
     
@@ -41,7 +41,7 @@ a:hover, a:active { text-decoration: none; color:rgb(250, 110, 133)}
 
 .login_window {
     margin: 10px;
-    width: 880px; height: 500px;
+    width: 100%; height: 500px;
     text-align: center;
     background-color: linen;
     font-weight: bold;
@@ -55,7 +55,7 @@ h1 {
 
 .div_id, .div_pw {
     display: inline-block; /* 이렇게하면 div안의 div가 중앙정렬 된다 */
-    width: 50%;
+    width: 30%;
     border-bottom: 2px solid rgb(250, 110, 133);
     margin: 20px;
     padding: 10px 10px;
@@ -90,7 +90,7 @@ h1 {
 
 footer {
     background-color: lightpink;
-    width: 900px;
+    width: 100%;
     height: 50px;
     clear: left;
     color: white;

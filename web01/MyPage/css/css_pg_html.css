@@ -1,7 +1,7 @@
 * {margin: 0px; padding: 0px;}
 
 header {
-    width: 900px;
+    width: 100%;
     height: 100px;
     background-color:lightpink;
     
@@ -49,15 +49,30 @@ a:hover, a:active { text-decoration: none; color:rgb(250, 110, 133)}
     color: rgb(228, 137, 150);
 }
 
-.html_window {
+.html_window, .html_code {
     float: left; /* 옆으로 이어서 붙이기 */
     margin: 10px;
     padding: 10px;
-    width: 480px; height: 480px;
-    text-align: center;
+    width: 32%; height: 480px;
     background-color: linen;
     color: rgb(228, 137, 150);
 }
+
+.html_code {
+    overflow-y: auto;
+}
+
+.html_window h2, .html_code h2 {
+    text-align: center;
+}
+
+.code p {
+    white-space: pre;
+    overflow: auto;
+    overflow-x: auto;
+    color: rgb(250, 110, 133);
+}
+
 
 .adv {
     float: left; /* 옆으로 이어서 붙이기 */
@@ -72,7 +87,7 @@ a:hover, a:active { text-decoration: none; color:rgb(250, 110, 133)}
 
 footer {
     background-color: lightpink;
-    width: 900px;
+    width: 100%;
     height: 50px;
     clear: left;
     color: white;

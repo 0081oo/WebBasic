@@ -1,7 +1,7 @@
 * {margin: 0px; padding: 0px;}
 
 header {
-    width: 900px;
+    width: 100%;
     height: 100px;
     background-color:lightpink;
     
@@ -42,31 +42,34 @@ a:hover, a:active { text-decoration: none; color:rgb(250, 110, 133)}
 
 .html_window, .css_window {
     float: left; /* 옆으로 이어서 붙이기 */
-    margin: 10px;
-    padding: 10px;
+    margin: 1%;
+    padding: 1%;
     padding-top:20px;
     /*line-height: 500px;*/
-    width: 280px; height: 500px;
+    width: 35%; height: 500px;
     text-align: center;
     background-color: linen;
     color: rgb(228, 137, 150);
 }
 
-.adv {
+.adv { 
     float: left; /* 옆으로 이어서 붙이기 */
-    margin: 10px;
-    padding: 10px;
+    margin: 1%;
+    padding: 1%;
     padding-top:20px;
-    /*line-height: 500px;*/
     width: 220px; height: 500px;
     text-align: center;
     background-color: linen;
     color: rgb(228, 137, 150);
 }
 
+#netimg {
+    position: relative;
+}
+
 footer {
     background-color: lightpink;
-    width: 900px;
+    width: 100%;
     height: 50px;
     clear: left;
     color: white;

@@ -39,12 +39,95 @@
 
         <div class="html_window">
             <h2>HTML (좌측 메뉴를 클릭하세요)</h2>
-            <iframe name=htmlFrame width="450px" height="430px"></iframe>
+            <iframe name=htmlFrame width="90%" height="90%"></iframe>
+        </div>
+
+        <div class="html_code">
+            <h2>HTML Code</h2>
+            <article class="code">
+                <p>
+&lt;!DOCTYPE html> <!-- document type html 이라고 생각 -->
+    &lt;html lang="ko">
+    &lt;head>
+        &lt;meta charset="utf=8">
+        &lt;title> TITLE </title>
+    &lt;/head>
+    &lt;body>
+        &lt;h1> TITLE 1 </h1>
+        &lt;h2> TITLE 2 </h2>
+        &lt;h3> TITLE 3 </h3>
+        &lt;h4> TITLE 4 </h4>
+        &lt;h5> TITLE 5 </h5>
+        &lt;h6> TITLE 6 </h6>
+
+        줄을 바꿀거에요 &lt;br> 바뀌었나요? &lt;br> 다시한번! 
+        
+        &lt;hr> 
+
+        &lt;h3> MARK </h3>&lt;br>
+        &lt;strong> 강조의 의미 (semantic) 부여 : 실제로 강조 의미가 부여된다 </strong>&lt;br>
+        &lt;b> 볼드체/굵은글씨 </b>&lt;br>
+        &lt;mark> 형광펜 효과 </mark>&lt;br>
+        &lt;u> 밑줄 태그 </u>&lt;br>
+        &lt;s> 취소선 </s>&lt;br>
+        &lt;i> 이탤릭 </i>&lt;br>
+        &lt;em> 강조의 의미 semantic을 기울기로 부여 &lt;/em>
+
+        &lt;h3> 인용 태그 </h3>
+        &lt;blockquote> 인용글이 있는 경우 사용 </blockquote>
+        &lt;q> 인용글이 있는 경우 사용 </q><br>
+        <!-- inline 태그와 block 태그의 차이점 <br>을 붙여야 하거나 아니거나 -->
+        기준글&lt;sup>위 첨자</sup>&lt;br>
+        기준글&lt;sub>아래 첨자</sub>&lt;br>
+        &lt;abbr title="내용">약어&lt;/abbr>
+        &lt;cite>다른 사이트 참고 내용&lt;/cite>
+        &lt;br>
+
+        &lt;pre>&lt;code> 
+            소스코드를 HTML 문서에 작성하기 위해 사용 개행 안됨 
+        </code></pre>&lt;br>
+        &lt;kbd> 키보드 입력 관련 내용을 작성하기 위해 사용 </kbd>&lt;br>
+        
+        &lt;h1> 제목열이 있는 테이블 </h1>
+        &lt;table border="1">
+        &lt;tr>
+                &lt;th>제목열1</th>
+                &lt;th>제목열2</th>
+                &lt;th>제목열3</th>
+            </tr>
+            &lt;tr>
+                &lt;th>내용 1행1열</th>
+                &lt;th>내용 1행2열</th>
+                &lt;th>내용 1행3열</th>
+            </tr>
+            &lt;tr>
+                &lt;th>내용 2행1열</th>
+                &lt;th>내용 2행2열</th>
+                &lt;th>내용 2행3열</th>
+            </tr>
+        </table>
+
+        &lt;h1>테이블 제목을 위한 caption</h1>
+        &lt;table border="1">
+            &lt;tr>
+                &lt;td>1행1열</td>
+                &lt;td>1행2열</td>
+            </tr>
+            &lt;tr>
+                &lt;td>2행1열</td>
+                &lt;td>2행2열</td>
+            </tr>
+            &lt;caption> 테이블 제목 </caption>
+        &lt;table>
+    &lt;/body>
+&lt;/html>
+                </p>
+            </article>
         </div>
 
         <aside class="adv">
-            <h3>오늘의 광고!</h3><br>
-            <a href="https://www.netflix.com/browse"><img src="/netf.png" width=200px></a>
+            <h3>광고</h3><br>
+            <a href="https://www.netflix.com/browse"><img id="netimg"src="/netf.png" width=200px></a>
             <h5><br>위의 로고 클릭시<br>넷플릭스 홈페이지로<br>이동합니다!</h5>
         </aside>
 
