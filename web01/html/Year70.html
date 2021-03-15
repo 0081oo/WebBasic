@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/index10.css" type="text/css">
+    <script type="text/javascript" src="/javaScript/year.js"></script>
+    <script type="text/javascript" src="/jquery/js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>1970년까지 선택 가능한 날짜 생성 선택박스</h1>
+        <div>
+            <select id="date_year" onfocus="generateYear(this);" onchange="generateYear(document.getElementById('date_year'), this.value, document.getElementById('date_year').value);">
+                <option>년도</option>
+            </select>
+            <select id="date_month" onfocus="generateMonth(this);" onchange="generateMonth(document.getElementById('date_month'), document.getElementById('date_month').value, this.value);">
+                <option>월</option>
+            </select>
+            <select id="date_day" onfocus="generateDay(this);" onchange="generateDay(document.getElementById('date_day'), document.getElementById('date_day').value);">
+                <option>일</option>
+            </select>
+        </div>
+    </section>
+</body>
+</html>

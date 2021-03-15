@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/index10.css" type="text/css">
+    <script type="text/javascript" src="/javaScript/rgb.js"></script>
+</head>
+<body>
+    <!-- < > 를 문자 자체로 쓰고싶으면 &lt &gt 사용 -->
+    <!-- html코드에 custom속성 넣기 : label의 for속성과 비슷하다 -->
+    <section>
+        <h1>&lt;input type="range"&gt를 사용하여 색상 바꾸기</h1>
+        <div>
+            <input type="range" id="red" value="0" min="0" max="255" step="1" 
+                oninput="changeColor(document.getElementById('red'),document.getElementById('green'),document.getElementById('blue'))"
+                for-set="rgb-code" for-set-index="0">
+            <input type="range" id="green" value="0" min="0" max="255" step="1"
+                oninput="changeColor(document.getElementById('red'),document.getElementById('green'),document.getElementById('blue'))"
+                for-set="rgb-code" for-set-index="1">
+            <input type="range" id="blue" value="0" min="0" max="255" step="1"
+                oninput="changeColor(document.getElementById('red'),document.getElementById('green'),document.getElementById('blue'))"
+                for-set="rgb-code" for-set-index="2">
+        </div>
+        <div>
+            <span class = "color-picker"></span>
+        </div>
+        <div>
+            <span class="rgb-code">R : 0</span>
+            <span class="rgb-code">G : 0</span>
+            <span class="rgb-code">B : 0</span>
+        </div>
+    </section>
+</body>
+</html>

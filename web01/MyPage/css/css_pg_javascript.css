@@ -1,0 +1,83 @@
+* {margin: 0px; padding: 0px;}
+
+header {
+    width: 900px;
+    height: 100px;
+    background-color:lightpink;
+    
+    position: relative; /* header의 absolute요소들을 header의 최상단 기준으로 하게 하려고 */
+}
+
+#frog {
+    width: 80px; height:80px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+a { text-decoration: none; color: white}
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; color:rgb(250, 110, 133)}
+
+#contents {
+    position: absolute;
+    top: 35px;
+    left: 150px;
+    color: white;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+#login {
+    position: absolute;
+    top: 35px;
+    right: 20px;
+    color: white;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.js_menu {
+    float: left;
+    margin: 10px;
+    width: 100px; height: 500px;
+    text-align: center;
+    background-color: lightpink;
+    font-weight: bold;
+    color: rgb(228, 137, 150);
+}
+
+.js_window {
+    float: left; /* 옆으로 이어서 붙이기 */
+    margin: 10px;
+    padding: 10px;
+    width: 480px; height: 480px;
+    text-align: center;
+    background-color: linen;
+    color: rgb(228, 137, 150);
+}
+
+.adv {
+    float: left; /* 옆으로 이어서 붙이기 */
+    margin: 10px;
+    padding: 10px;
+    width: 220px; height: 480px;
+    text-align: center;
+    background-color: linen;
+    color: rgb(228, 137, 150);
+}
+
+footer {
+    background-color: lightpink;
+    width: 900px;
+    height: 50px;
+    clear: left;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px; /* 글씨의 높이 자체를 footer크기와 같게 해줘서 수직 중앙 정렬 */
+}
+
+

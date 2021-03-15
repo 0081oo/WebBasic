@@ -21,21 +21,19 @@
 //     }
 // }
 
-// function generateDate(element) {
+// function generateDay(element) {
 //     if (element.children.length <= 1) {
 //         for(let day = 1; day <= 31; day++){
 //             let option = document.createElement("option");
 //             option.setAttribute("value", day);
-//             option.innerText = month;
+//             option.innerText = day;
 //             element.appendChild(option);
 //         }
 //     }
 // }
 
 function generateYear(element) {
-    /**
-     * 현재년도 부터 1970년 까지 선택박스 옵션을 자동 생성
-     */
+    // 1970 까지의 년도 선택
     let date = new Date();
     if (element.children.length <= 1) {
         for(let year = date.getFullYear(); year >= 1970; year--) {
@@ -48,9 +46,7 @@ function generateYear(element) {
 }
 
 function generateMonth(element) {
-    /**
-     * 1월 ~ 12월 까지 선택박스 옵션을 자동 생성
-     */
+    // 월 선택
     if (element.children.length <= 1) {
         for(let month = 1; month <= 12; month++) {
             let option = document.createElement("option");
