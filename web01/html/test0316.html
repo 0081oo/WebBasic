@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/test0316.css" type="text/css">
+</head>
+<body>
+    <div id="box">
+        <button onclick="copyDiv();">복사하기</button>
+        <button onclick="deleteDiv();">삭제하기</button>  
+    </div>
+    <div id="result">
+
+    </div>
+
+    <hr>
+
+    <table border="1">
+        <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th>작성자</th>
+        </tr>
+        <tr onclick="tableClicked(this);">
+            <td>1</td>
+            <td>첫 번째 게시물 입니다</td>
+            <td>홍길동</td>
+        </tr>
+        <tr onclick="tableClicked(this);">
+            <td>2</td>
+            <td>두 번째 게시물 입니다</td>
+            <td>홍길동</td>
+        </tr>
+        <tr onclick="tableClicked(this);">
+            <td>3</td>
+            <td>세 번째 게시물 입니다</td>
+            <td>홍길동</td>
+        </tr>
+    </table>
+    <div>
+        선택한 게시물: <span id="first"></span> / <span id="second"></span> / <span id="third"></span> 
+    </div>
+
+    <hr>
+    <BUTTON id="btn1" onclick="window.alert('클릭하였음');">확인</BUTTON>
+
+    <button id="btn2" onclick="testClicked()">확인</button>
+
+</body>
+<script type="text/javascript">
+    function copyDiv() {
+        var temp = document.getElementById("box").cloneNode(true);
+        result.appendChild(temp);
+    }
+
+    function deleteDiv() {
+        var temp = document.getElementById("box");
+        temp.parentNode.removeChild(temp);
+    }
+
+    function tableClicked(element){
+        document.getElementById("first").innerHTML = element.cells[0].firstChild.data;
+        document.getElementById("second").innerHTML = element.cells[1].firstChild.data;
+        document.getElementById("third").innerHTML = element.cells[2].firstChild.data;
+    }
+
+    function testClicked(){
+        window.alert("클릭하였음");
+    }
+    
+</script>
+</html>
